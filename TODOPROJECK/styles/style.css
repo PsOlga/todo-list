@@ -1,0 +1,209 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: hsl(240, 8%, 3%);
+  font-family: "Open Sans";
+  width: 100%;
+}
+
+.container {
+  width: 428px;
+  min-height: 926px;
+  margin: 10% auto;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  background-color: rgb(255, 215, 159);
+  position: relative;
+}
+header {
+  margin-top: 14px;
+}
+
+header,
+h2 {
+  padding-left: 5px;
+  font-size: 20px;
+  font-weight: 700;
+}
+.searchContaeiner {
+  display: flex;
+  
+}
+
+.searchBar {
+  border-radius: 28px;
+  border: 1px solid rgb(159, 221, 255);
+  background-color: rgb(237, 244, 252);
+  padding: 5px;
+  width: 98%;
+  margin-left: 5px;
+  font-size: 16px;
+  outline: none;
+}
+.searchBar::placeholder{
+  padding-left: 15px;
+}
+.searchBtn {
+  width: 48px;
+  height: 48px;
+  background-color: rgb(255, 215, 159);
+  background-image: url("/images/search-sort-svgrepo-com.svg");
+  background-repeat: no-repeat;
+  background-size: 40px;
+  background-position: center;
+  border: none;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  gap: 16px;
+  background-color: rgb(237, 244, 252);
+  border-radius: 5px;
+  border: 2px solid rgb(159, 221, 255);
+}
+form input {
+  height: 56px;
+  background-color: rgb(239 234 245);
+  padding-left: 16px;
+  border-radius: 5px;
+}
+.confirmReset {
+  display: flex;
+  justify-content: end;
+  gap: 8px;
+}
+.confirmReset button {
+  width: 115px;
+  height: 40px;
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: 28px;
+  cursor: pointer;
+}
+.confirmReset button {
+  background-color: rgb(239 234 245);
+  color: rgb(3, 62, 94);
+  border: 1px solid black;
+}
+.confirmReset button:hover {
+  color: rgb(71, 93, 105);
+  background-color: rgb(159, 221, 255);
+}
+
+.filters {
+  background-color: rgb(211, 238, 253);
+  height: 48px;
+  border-radius: 28px;
+  padding: 0 28px;
+  display: flex;
+  justify-content: center;
+  border: 1px solid black;
+  /* margin-bottom: 10px; */
+}
+.filters button {
+  background-color: rgb(211, 238, 253);
+  border: none;
+  border-right: 1px solid rgb(0, 0, 0);
+  flex: 1;
+}
+.filterBtn.completed {
+  border-right: none;
+}
+.listOfEntry {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.listOfEntrychilds {
+  margin: 8px;
+  display: flex;
+  padding: 8px 28px;
+  gap: 16px;
+  align-items: center;
+  background-color: rgb(239 234 245);
+}
+
+.editBtn {
+  position: absolute;
+  bottom: 10px;
+  right: 16px;
+  height: 56px;
+  width: 56px;
+  padding: 10px;
+  border-radius: 16px;
+  border: none;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+  background-color: rgba(235, 222, 247, 1);
+  background-image: url("/images/edit-svgrepo-com.svg");
+  background-repeat: no-repeat;
+  background-size: 30px;
+  background-position: center;
+}
+
+.editContainer {
+  margin: 10% 30%;
+}
+.editContainer h2 {
+  color: rgb(239 234 245);
+  margin-bottom: 10px;
+  font-size: 28px;
+}
+.editListOfEntryChenges {
+  list-style-type: none;
+}
+.editListOfEntryChenges li {
+  margin: 16px;
+  display: flex;
+  padding: 8px 15px;
+  width: max-content;
+  border-radius: 10px;
+  gap: 12px;
+  align-items: center;
+  background-color: rgb(239 234 245);
+}
+.editListOfEntryChenges li > input {
+  border: none;
+  outline: none;
+  font-size: 20px;
+  padding: 5px;
+}
+.deleteTaskBtn {
+  background-color: rgb(224, 50, 50);
+  color: aliceblue;
+  padding: 5px;
+  font-size: 20px;
+  border: none;
+}
+.deleteTaskBtn:hover,
+.saveBtn:hover,
+.cancelBtn:hover {
+  color: rgb(101, 101, 101);
+  background-color: rgb(159, 221, 255);
+}
+
+.editContainer h2 {
+  margin-left: 13px;
+}
+.seveChengesCancel {
+  display: flex;
+  gap: 12px;
+}
+.saveBtn,
+.cancelBtn {
+  margin-left: 20px;
+  background-color: rgb(74, 164, 212);
+  color: aliceblue;
+  padding: 5px;
+  font-size: 20px;
+  border: none;
+  width: 75px;
+}
